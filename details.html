@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extra Details | Sukesh</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="user_icon.png">
+</head>
+<body class="extra-page">
+  <div class="page-shell">
+    <header class="extra-hero">
+      <div class="layer layer-one"></div>
+      <div class="layer layer-two"></div>
+      <div class="layer layer-three"></div>
+
+      <nav class="extra-nav">
+        <a href="index.html" class="logo">SUKESH</a>
+        <div class="extra-nav-links">
+          <a href="index.html">Home</a>
+          <a href="#overview">Overview</a>
+          <a href="#skills">Skills</a>
+          <a href="#achievements">Achievements</a>
+        </div>
+      </nav>
+
+      <div class="extra-hero-content">
+        <div>
+          <p class="subtitle">Extra Portfolio Details</p>
+          <h1>More About My Journey</h1>
+          <p class="hero-copy">This page highlights my learning path, strengths, and the practical skills I have developed through web and software projects.</p>
+          <div class="hero-actions">
+            <button class="btn" id="togglePanelsBtn" type="button">Explore Sections</button>
+            <a class="linkedin-box" href="https://www.linkedin.com/in/sukesh-p-ba501a265/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <p class="clock-label">Current Time</p>
+          <div id="liveClock" class="clock">--:--:--</div>
+          <div class="stats-row">
+            <div>
+              <span id="projectsCount">3</span>
+              <small>Projects</small>
+            </div>
+            <div>
+              <span id="skillsCount">6</span>
+              <small>Skills</small>
+            </div>
+            <div>
+              <span id="yearsCount">1+</span>
+              <small>Years</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="details-main">
+      <div class="tab-row">
+        <button class="tab-button active" data-target="overview" type="button">Overview</button>
+        <button class="tab-button" data-target="skills" type="button">Skills</button>
+        <button class="tab-button" data-target="achievements" type="button">Achievements</button>
+      </div>
+
+      <section id="overview" class="detail-section active-section">
+        <div class="section-heading">
+          <h2>Overview</h2>
+          <p>I enjoy creating thoughtful, responsive interfaces and turning complex ideas into simple user experiences.</p>
+        </div>
+        <div class="overview-grid">
+          <article class="layer-card">
+            <h3>Learning Style</h3>
+            <p>I focus on practical learning, hands-on coding, and building projects that solve real problems.</p>
+          </article>
+          <article class="layer-card">
+            <h3>Core Strengths</h3>
+            <p>Clean design, problem solving, adaptability, and a strong interest in modern frontend development.</p>
+          </article>
+          <article class="layer-card">
+            <h3>Career Goal</h3>
+            <p>To grow as a full-stack-oriented developer and contribute to impactful digital products.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="detail-section">
+        <div class="section-heading">
+          <h2>Technical Skills</h2>
+          <p>Search and explore the skills I have built and continue improving.</p>
+        </div>
+        <input id="skillSearch" class="skill-search" type="text" placeholder="Search skill...">
+        <div id="skillsGrid" class="skills-grid"></div>
+      </section>
+
+      <section id="achievements" class="detail-section">
+        <div class="section-heading">
+          <h2>Achievements & Milestones</h2>
+          <p>Key moments and growth highlights that shaped my journey.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>2024</h3>
+            <p>Built responsive portfolio websites with HTML, CSS, and JavaScript.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2025</h3>
+            <p>Expanded skills into React JS, MySQL, Python automation, and machine learning basics.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Future Focus</h3>
+            <p>Continuing to strengthen my full-stack knowledge and release real-world projects.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="details.js"></script>
+</body>
+</html>

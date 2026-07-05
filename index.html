@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="user_icon.png">
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <a href="#home" class="logo">SUKESH</a>
+      <ul class="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content" id="home">
+      <div>
+        <p class="subtitle"><span id="typingText">Web Developer</span></p>
+        <h1><mark>HI, I'M SUKESH</mark></h1>
+        <p><b><i>This is my first portfolio website and try to showcase my skills and my way of creating websites.</i></b></p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn" id="contactBtn">Contact Me</a>
+          <a href="details.html" class="btn btn-secondary">View More Details</a>
+          <button class="btn btn-secondary" id="themeToggleBtn" type="button">🌙 Dark Mode</button>
+          <button class="btn btn-secondary" id="copyEmailBtn" type="button">📋 Copy Email</button>
+        </div>
+      </div>
+      <div class="profile-card">
+        <img src="sukesh.jpg.jpeg" alt="Sukesh profile picture" class="profile-image" id="profileImage">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section section-about">
+      <h2><b>ABOUT ME</b></h2>
+      <p><i>I am passionate about web development, creating interactive and dynamic web pages by using React JS.</i></p>
+    </section>
+
+    <section id="projects" class="section section-projects">
+      <h2><b>PROJECTS</b></h2>
+      <div class="card-grid">
+        <article class="card" data-card="1">
+          <h3>PERSONAL PORTFOLIO</h3>
+          <p><i>A responsive portfolio website built with HTML, CSS, and JavaScript.</i></p>
+        </article>
+        <article class="card" data-card="2">
+          <h3>BUSINESS LANDING PAGE</h3>
+          <p><i>Clean and modern landing page for a startup or business brand.</i></p>
+        </article>
+        <article class="card" data-card="3">
+          <h3>WEB APP UI</h3>
+          <p><i>Interactive user interface design for a web-based application.</i></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-contact">
+      <h2>CONTACT ME</h2>
+      <p><i>contact me for any queries or collaborations. I am open to freelance work and full-time opportunities.</i></p>
+      <div class="contact-details">
+        <p>📧 Email: besukesh007@gmail.com</p>
+        <p>📱 Phone: +91 7010640927</p>
+      </div>
+      <button id="showDetailsBtn" class="btn">Show My Details</button>
+      <p id="detailsOutput" class="details-output"></p>
+      <a href="mailto:besukesh007@gmail.com" class="btn">Send Email</a>
+    </section>
+  </main>
+  <hr class="section-divider"></header>
+
+  <div id="projectPopup" class="project-popup">
+    <div class="project-popup-content">
+      <h3>PROJECT DETAILS</h3>
+      <p id="projectMessage">Click a project card to explore it.</p>
+      <button id="closePopupBtn" class="btn">Close</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p id="dateTime"></p>
+    <p>Thank you for visiting my portfolio site.</p>
+    <p>Built with HTML, CSS, and JavaScript.</p>
+    <p>&copy; <span id="year"></span> Sukesh. All rights reserved.</p>
+  </footer>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" type="button" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
